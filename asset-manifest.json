@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hyperlocalll/static/css/main.6ef1447a.css",
+    "main.js": "/hyperlocalll/static/js/main.8310d35f.js",
+    "index.html": "/hyperlocalll/index.html",
+    "main.6ef1447a.css.map": "/hyperlocalll/static/css/main.6ef1447a.css.map",
+    "main.8310d35f.js.map": "/hyperlocalll/static/js/main.8310d35f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ef1447a.css",
+    "static/js/main.8310d35f.js"
+  ]
+}
