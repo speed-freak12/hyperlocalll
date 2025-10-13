@@ -1,8 +1,10 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt'; 
-import { Link } from 'react-router-dom'; // Import the Link component
+import { Link } from 'react-router-dom';
+import { Element } from 'react-scroll'; // For smooth scrolling
 import './TutorsSection.css';
 
+// The full tutors array data
 const tutors = [
   { 
     id: 1,
@@ -38,9 +40,9 @@ const tutors = [
   },
 ];
 
+// The full TutorCard component
 function TutorCard({ tutor }) {
   return (
-    // Wrap the entire card in a Link component
     <Link to={`/tutor/${tutor.id}`} className="tutor-card-link">
       <Tilt>
         <div className="tutor-card">
@@ -60,16 +62,17 @@ function TutorCard({ tutor }) {
   );
 }
 
+// The TutorsSection component with the Element wrapper
 function TutorsSection() {
   return (
-    <div className="tutors-container">
+    <Element name="tutorsSection" className="tutors-container">
       <h2>Meet Our Top Tutors</h2>
       <div className="tutors-grid">
         {tutors.map(tutor => (
           <TutorCard key={tutor.id} tutor={tutor} />
         ))}
       </div>
-    </div>
+    </Element>
   );
 }
 
