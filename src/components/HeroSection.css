@@ -1,0 +1,61 @@
+.hero-container {
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.hero-container h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero-container .highlight {
+  color: #A38CFB; /* A lighter purple for the highlight */
+}
+
+.hero-container p {
+  font-size: 18px;
+  color: #c0c0c0;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2D2D3A; /* Darker background for the search bar */
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  background: none;
+  border: none;
+  color: #c0c0c0;
+  font-size: 16px;
+  padding: 15px;
+  width: 40%;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar .divider {
+  color: #555;
+  font-size: 24px;
+}
+
+.search-bar button {
+  background-color: #7A5CFA;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}

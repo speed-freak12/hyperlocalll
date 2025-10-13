@@ -1,0 +1,65 @@
+.tutors-container {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+.tutors-container h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.tutors-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.tutor-card {
+  width: 280px;
+  border-radius: 15px;
+  background-color: #1a1a2e;
+  color: white;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card-header {
+  padding: 15px 20px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+  color: #c0c0c0;
+  font-size: 14px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Add this to remove the default link underline */
+.tutor-card-link {
+  text-decoration: none;
+}
