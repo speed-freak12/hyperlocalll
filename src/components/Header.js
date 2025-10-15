@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom'; // Keep router link
-import { Link as ScrollLink } from 'react-scroll';   // 1. IMPORT SCROLL LINK
 import './Header.css';
 
 function Header() {
@@ -9,10 +8,7 @@ function Header() {
       <RouterLink to="/" className="logo">hyperlocal.</RouterLink>
       
       <nav className="nav-links">
-        {/* 2. USE THE SCROLL LINK FOR "BROWSE" */}
-        <ScrollLink to="tutorsSection" smooth={true} duration={500} style={{cursor: 'pointer'}}>
-          Browse
-        </ScrollLink>
+        <RouterLink to="/tutors">Browse</RouterLink>
         <RouterLink to="/how-it-works">How It Works</RouterLink>
         <RouterLink to="/become-a-teacher">Become a Teacher</RouterLink>
       </nav>

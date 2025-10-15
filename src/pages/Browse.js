@@ -1,7 +1,8 @@
 import React from 'react';
+import { Navigate } from 'react-router-dom';
 
 function Browse() {
-  return <h1 style={{ color: 'white', textAlign: 'center', marginTop: '50px' }}>Browse Page</h1>;
+  return <Navigate to="/tutors" replace />;
 }
 
 export default Browse;

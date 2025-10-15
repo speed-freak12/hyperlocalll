@@ -3,42 +3,10 @@ import Tilt from 'react-parallax-tilt';
 import { Link } from 'react-router-dom';
 import { Element } from 'react-scroll'; // For smooth scrolling
 import './TutorsSection.css';
+import { getAllTutors } from '../data/tutors';
 
-// The full tutors array data
-const tutors = [
-  { 
-    id: 1,
-    name: 'Aisha Khan', 
-    skill: 'Guitar Lessons',
-    location: 'Koramangala',
-    price: '₹1200/hr',
-    color: '#7A5CFA' 
-  },
-  { 
-    id: 2,
-    name: 'Rohan Mehta', 
-    skill: 'React Development',
-    location: 'Indiranagar',
-    price: '₹2500/hr',
-    color: '#9065FD' 
-  },
-  { 
-    id: 3,
-    name: 'Priya Sharma', 
-    skill: 'Baking & Pastry',
-    location: 'Jayanagar',
-    price: '₹1800/hr',
-    color: '#E84A7F' 
-  },
-  { 
-    id: 4,
-    name: 'Vikram Singh', 
-    skill: 'Yoga & Wellness',
-    location: 'Koramangala',
-    price: '₹1500/hr',
-    color: '#27AE60' 
-  },
-];
+// Featured tutors from the shared dataset
+const displayTutors = getAllTutors().slice(0, 8);
 
 // The full TutorCard component
 function TutorCard({ tutor }) {
@@ -68,7 +36,7 @@ function TutorsSection() {
     <Element name="tutorsSection" className="tutors-container">
       <h2>Meet Our Top Tutors</h2>
       <div className="tutors-grid">
-        {tutors.map(tutor => (
+        {displayTutors.map(tutor => (
           <TutorCard key={tutor.id} tutor={tutor} />
         ))}
       </div>

@@ -11,8 +11,19 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_APP_ID,
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// Initialize Firebase with guard so app can run without .env in local dev
+let app;
+let auth;
+try {
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+} catch (e) {
+  // eslint-disable-next-line no-console
+  console.warn(
+    'Firebase init failed; using mock auth. Provide REACT_APP_* env vars to enable Firebase.',
+    e
+  );
+  auth = { currentUser: null };
+}
 
-// Initialize Firebase Authentication and export it for use in other files
-export const auth = getAuth(app);
+export { auth };

@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import TutorDetail from './pages/TutorDetail'; // Import the new page
 import './App.css'; 
+import Tutors from './pages/Tutors';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/browse" element={<Browse />} />
+            <Route path="/tutors" element={<Tutors />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/become-a-teacher" element={<BecomeTeacher />} />
             <Route path="/login" element={<Login />} />

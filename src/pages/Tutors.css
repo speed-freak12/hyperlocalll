@@ -1,0 +1,95 @@
+/* Tutors page styles - scoped to .tutors-page to avoid global collisions */
+
+.tutors-page {
+  color: white;
+  padding: 30px 20px 60px;
+}
+
+.tutors-hero {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.tutors-hero h1 {
+  font-size: 36px;
+  margin: 0 0 8px 0;
+}
+
+.tutors-hero p {
+  color: #c0c0c0;
+  margin: 0;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 200px 220px;
+  gap: 12px;
+  max-width: 1100px;
+  margin: 20px auto 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #33374a;
+  background-color: #121528;
+  color: #fff;
+}
+
+.select-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #33374a;
+  background-color: #121528;
+  color: #fff;
+}
+
+.results-info {
+  max-width: 1100px;
+  margin: 6px auto 16px;
+  color: #9aa4b2;
+}
+
+.tutors-page .tutors-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* Reuse existing global card classes but ensure spacing inside page */
+.tutors-page .tutor-card {
+  width: 100%;
+}
+
+.rating-exp {
+  color: #c0c0c0;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+}
+
+.pagination {
+  margin: 24px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pagination button {
+  background: #2D2D3A;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
